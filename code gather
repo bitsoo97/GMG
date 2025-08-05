@@ -18,9 +18,12 @@
 
 ## 7. **networkDomain -** unknown.unknown → ( not set ) 으로 통일
 
-## 8. browser - safari 로 통일 , 0→ ( not set ) 으로 통일
+## 8. browser - safari 로 통일 , 0 → ( not set ) 으로 통일
+
 
 ## 9. pagePath - ‘/ ’ 갯수를 세서 사이트에서 얼마 헤맸는지를 나타내는 지표로 사용하자
+df['pagePath'] = df['pagePath'].fillna('') 
+df['pagePath'] = df['pagePath'].str.count('/')
 
 ## 10. pageTitle - NULL  제거
 df_clean = df.dropna(subset=['pageTitle'])
