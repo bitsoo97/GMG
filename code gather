@@ -1,1 +1,25 @@
+# 라이브러리 호출
 
+
+
+# 데이터 전처리
+## 1. visitStartTime - 날짜 형식으로 바꾸기
+
+## 2. pageviews - null → 중앙값으로 넣어주기
+
+## 3. timeOnSite - 시간 단위 설정하기 / 시간 변환 해주기
+
+## 4. medium - (not set) → (none) 으로 통일 해주기
+
+## 5. keyword - null → not provided 로 채워주기 & none → not provided
+    ⚠️ keyword 값이 너무 지저분하고, 많음. & 외국어도 섞여있음. 
+
+## 6. **city -** not abila 어쩌구 → (not set) 으로 통일 해주기
+
+## 7. **networkDomain -** unknown.unknown → ( not set ) 으로 통일
+
+## 8. browser - safari 로 통일 , 0→ ( not set ) 으로 통일
+
+## 9. pagePath - ‘/ ’ 갯수를 세서 사이트에서 얼마 헤맸는지를 나타내는 지표로 사용하자
+
+## 10. pageTitle - NULL  제거
